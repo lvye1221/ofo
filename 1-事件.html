@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  
+  <!-- 注释： button 代表1个按钮 
+       html 语言，基础语言
+	     成双入对   <button>     </button>
+
+	   onclick 代表在点击时
+	   "func()"  执行我们定义的功能
+  -->
+  <button> 按钮1 </button>
+  <button> 按钮2 </button>
+
+  <!-- JS 程序来控制， 实现点击按钮的时候，做某种事情 -->
+  <script>
+  // JS 中的注释是这样写的 //
+  //  JS 程序写在这里
+
+  // 定义1个功能，功能的名字是 func
+  function func()
+  {
+	  // 弹出对话框
+      alert("点击了");
+  }
+
+  // 1. 得到 按钮 元素 (通过标签名得到的)   当前有多个按钮, 按钮的编号是从 0,1,2 ...
+  var btns = document.getElementsByTagName("button");
+
+  //  btns[0] 代表第1个按钮
+  //   .onclick 单击的功能  设置为 func 这个功能
+  btns[0].onclick = func;
+
+  </script>
+
+ </body>
+</html>
