@@ -36,7 +36,18 @@
   function func(e)
   {
 	  // 弹出对话框
-      alert( e.target.innerHTML );
+	  //    e.target.innerHTML 获取点击按钮中的内容
+      //alert( e.target.innerHTML );
+
+	  //  判断 点击按钮里面的内容 是否 等于 按钮2
+	  if (e.target.innerHTML == " 按钮2 ")
+	  {
+		  alert("哈哈哈，你中奖啦！");
+	  }
+	  else if (e.target.innerHTML == " 按钮3 ")
+	  {
+		  alert("哈哈哈，你很厉害啦！");
+	  }
   }
 
   // 1. 得到 按钮 元素 (通过标签名得到的)   当前有多个按钮, 按钮的编号是从 0,1,2 ...
