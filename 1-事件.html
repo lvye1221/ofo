@@ -17,8 +17,14 @@
 	   onclick 代表在点击时
 	   "func()"  执行我们定义的功能
   -->
+
   <button> 按钮1 </button>
   <button> 按钮2 </button>
+  <button> 按钮3 </button>
+  <button> 按钮4 </button>
+  <button> 按钮5 </button>
+  <button> 按钮6 </button>
+
 
   <!-- JS 程序来控制， 实现点击按钮的时候，做某种事情 -->
   <script>
@@ -26,18 +32,26 @@
   //  JS 程序写在这里
 
   // 定义1个功能，功能的名字是 func
-  function func()
+  //   点击了按钮，其实相当于产生了1个事件，那么系统会将事件的信息传递给 我们的功能，所以 e，是保存了这个事件的相关信息
+  function func(e)
   {
 	  // 弹出对话框
-      alert("点击了");
+      alert( e.target.innerHTML );
   }
 
   // 1. 得到 按钮 元素 (通过标签名得到的)   当前有多个按钮, 按钮的编号是从 0,1,2 ...
   var btns = document.getElementsByTagName("button");
 
+  // 2. 给按钮绑定点击事件处理函数
   //  btns[0] 代表第1个按钮
   //   .onclick 单击的功能  设置为 func 这个功能
   btns[0].onclick = func;
+  btns[1].onclick = func;
+  btns[2].onclick = func;
+  btns[3].onclick = func;
+  btns[4].onclick = func;
+  btns[5].onclick = func;
+
 
   </script>
 
