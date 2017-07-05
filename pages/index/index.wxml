@@ -23,6 +23,9 @@
 <view class="c">
 
 
+  <button bindtap="aaaa"> 跳转按钮 </button>
+
+
   <!-- longitude 经度值
        latitude 纬度值
        scale 缩放级别
@@ -47,9 +50,8 @@
     latitude="23.099994"
     scale="{{a}}"
     controls = "{{control}}"
-    markers = "{{markers}}"
 
-    bindcontroltap="controltap" 
+     bindcontroltap="controltap" 
     > </map>
 
 </view>
